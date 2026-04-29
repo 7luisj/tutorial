@@ -1,5 +1,7 @@
 #include <iostream>
 // Directivas de preprocesador en C y C++
+//#include <stdlib.h>
+#include <string.h>
 
 #define TASA 0.05
 #ifndef FIN 
@@ -11,6 +13,8 @@
 
 #define STR(t) #t// convierte el argumento en una cadena de texto
 
+#define STRLEN(x) strlen(x) //agregar la libreria string.h 
+                            //para usar la función strlen
 
 int main() {
     printf("Tasa de interes: %.2f\n", TASA);
@@ -39,7 +43,7 @@ int main() {
     #endif
 
     printf("prueba STR: %s\n", STR(123/12));
-
+    printf("prueba STRLEN: %zu\n", STRLEN("Hola Mundo"));
 
 
 
