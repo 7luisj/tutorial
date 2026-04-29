@@ -1,4 +1,5 @@
 #include <iostream>
+// Directivas de preprocesador en C y C++
 
 #define TASA 0.05
 #ifndef FIN 
@@ -6,6 +7,10 @@
 #endif
 
 #define NIVEL 4
+
+
+#define STR(t) #t// convierte el argumento en una cadena de texto
+
 
 int main() {
     printf("Tasa de interes: %.2f\n", TASA);
@@ -32,6 +37,8 @@ int main() {
     #else
     printf("Nivel = \n", NIVEL);
     #endif
+
+    printf("prueba STR: %s\n", STR(123/12));
 
 
 
