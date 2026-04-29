@@ -1,5 +1,5 @@
 import pandas as pd
-
+#pandas y la funcion DataFrame  
 df = pd.DataFrame() 
 df['color'] = ['Rojo', 'Verde', 'Azul', 'Blanco']
 df['radios'] = [2,4,8,16]
