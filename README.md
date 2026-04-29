@@ -1,3 +1,3 @@
 as# tutorial
 Tutorial siguiendo pildoras informaticas
-Soy Jose Torres Ingeniero Electronico
+Soy José Torres Ingeniero Electrónico
