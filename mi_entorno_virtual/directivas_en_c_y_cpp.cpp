@@ -16,6 +16,8 @@
 #define STRLEN(x) strlen(x) //agregar la libreria string.h 
                             //para usar la función strlen
 
+#define V(a,b) a##b //concatena a y b
+
 int main() {
     printf("Tasa de interes: %.2f\n", TASA);
     #ifdef TASA
@@ -44,8 +46,14 @@ int main() {
 
     printf("prueba STR: %s\n", STR(123/12));
     printf("prueba STRLEN: %zu\n", STRLEN("Hola Mundo"));
+    
+    int aa = 10;
+    int bb = 20;
 
-
+    int V(aa,bb) = aa + bb; // define una función V  
+                            //suma aa y bb
+    printf("prueba V: %d\n", V(aa,bb)); // concatena aa y bb 
+                                        //para formar aabb
 
     return 0;
 }
