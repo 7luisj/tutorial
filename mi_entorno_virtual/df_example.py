@@ -12,4 +12,8 @@ print(df['radios']) # imprime la columna radios
 d = pd.DataFrame() 
 d['nombres'] = ['jose', 'luis', 'torres', 'bonilla']
 d['numeros'] = [128,64,32,16]
+d['msb'] = d['numeros']
+d['lsb'] = [8, 4, 2, 1]
+
+print(df)# imprime el dataframe completo
 print(d)
