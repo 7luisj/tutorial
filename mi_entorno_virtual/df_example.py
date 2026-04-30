@@ -16,4 +16,4 @@ d['msb'] = d['numeros']
 d['lsb'] = [8, 4, 2, 1]
 
 print(df)# imprime el dataframe completo
-print(d)
+print(df.shape) 
