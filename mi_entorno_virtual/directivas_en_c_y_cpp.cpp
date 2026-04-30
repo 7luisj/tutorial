@@ -17,6 +17,8 @@
                             //para usar la función strlen
 
 #define V(a,b) a##b //concatena a y b
+#define R(x) x*x  
+#define RR(x) (x*x)  
 
 int main() {
     printf("Tasa de interes: %.2f\n", TASA);
@@ -54,6 +56,10 @@ int main() {
                             //suma aa y bb
     printf("prueba V: %d\n", V(aa,bb)); // concatena aa y bb 
                                         //para formar aabb
-
+    
+    int r = 16/R(4);
+    int rr = 16/RR(4);
+    printf("prueba R: %d\n", r);   
+    printf("prueba RR: %d\n", rr);   
     return 0;
 }
